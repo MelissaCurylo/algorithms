@@ -12,6 +12,8 @@ Sliding Window Technique
 
 
 """
+# 1
+
 # From the given array of positive integers nums and an integer k, find the longest subarry with a sum less than or equal to k. 
     # constraint: sum(window) <= k
 
@@ -59,3 +61,38 @@ def longest_subarray(nums, k):
     return max_subarray
 
 print(longest_subarray(nums, k))
+
+
+
+
+""" 
+# 2 
+
+# What is the longest substring containing only "1" after performing at most one operation, given a binary substring s?
+
+
+"""
+
+s = [1101100111]
+
+def longest_binary(s):
+    
+    left_pointer = 0
+    current_sum = 0
+    max_binary = 0
+
+    for right_pointer in range (len(s)):
+
+        if s[right_pointer] =="0":
+            current_sum += 1
+
+        while current_sum > 1:
+            if s[left_pointer] =="0":
+                current_sum -= 1
+            left += 1
+        
+        max_binary = max(max_binary, right_pointer-left_pointer + 1)
+
+    return max_binary
+
+print(longest_binary(s))
