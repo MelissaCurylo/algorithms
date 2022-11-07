@@ -57,8 +57,6 @@ Input: nums = [10,5,2,6], k = 100
 
 """
 
-from re import sub
-
 
 nums = [10,5,2,6]
 k = 100
