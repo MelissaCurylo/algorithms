@@ -28,6 +28,8 @@ nums = [1,1,1,0,0,0,1,1,1,1,0]
 k = 2
 
 # Soltuion version # 1
+    # Time Complexity: 0(n)
+    # Based on how many steps to traverse n elements.
 def longestOnes(nums: list[int], k: int) -> int:          
     
     left_pointer = 0
@@ -38,6 +40,7 @@ def longestOnes(nums: list[int], k: int) -> int:
 
         if nums[right_pointer] == 0:
             k -= 1
+
         if k < 0:
             if nums[left_pointer] == 0:
                 k += 1
@@ -46,6 +49,7 @@ def longestOnes(nums: list[int], k: int) -> int:
     return right_pointer - left_pointer
 
 print(longestOnes(nums,k))
+
 
 
 
