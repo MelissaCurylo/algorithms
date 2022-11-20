@@ -5,7 +5,6 @@ Given an array nums. We define a running sum of an array as runningSum[i] = sum(
 
 Return the running sum of nums.
 
-
 Example 1:
     Input: nums = [1,2,3,4]
     Output: [1,3,6,10]
@@ -26,9 +25,6 @@ Constraints:
 1 <= nums.length <= 1000
 -10^6 <= nums[i] <= 10^6
 """
-
-
-
 
 nums1 = [1,2,3,4]
 nums2 = [1,1,1,1,1]
@@ -61,7 +57,7 @@ print(runningSum(nums3))
     # Linear time due to storing the same amount of elements as the initial starting value.
 
 """
-Pseudocode: Solution
+Pseudocode/Solution:
 
 - Goal: Obtain running total (addition) of all listed numbers in array. 
 
