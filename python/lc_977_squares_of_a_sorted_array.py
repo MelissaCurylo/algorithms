@@ -54,11 +54,11 @@ print(sortedSquares(nums1))
     # Only one pass through array was needed when starting with the larger elements and sorting from largest to smallest. 
     # O(log n) would be to square each value then sort leading to several passes through the array. 
 
-# Space Complexity: O(1)
-    # Constant space 
+# Space Complexity: O(n)
+    # Constant space as using the same amount of space as the initial start value of space.
 
 """
-Pseudocode: Solution # 1
+Pseudocode/Solution:
 
 - Goal: Square each index value and return the squared values in non-decreasing order in O(n).
 
