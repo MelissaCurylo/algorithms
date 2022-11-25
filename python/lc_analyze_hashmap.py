@@ -1,11 +1,18 @@
 """
 Python Dictionary Notes:
-- Dictionary Syntax: dic = {}
+    - Dictionary Syntax: dic = {}
+    - Deleting:
+        - del my_dict # deletes dictionary
+        - del my_dict['yourkey'] # deletes key
+    - Clearing:
+        - my_dict.clear()
 """
+print(f"-------------------------------------------\n")
+
 my_dict = {"username": "MelissaLynn", "email": "Melissa.Curylo@outlook.com", "favorite meal": "Vegetarian Pad Thai"}
 print("username : ", my_dict['username'])
 print(my_dict)
-print("-------------------------------------------")
+print(f"-------------------------------------------\n")
 
 # print("Dictionary Position #2: ", my_dict[2]) #  returns KeyError, cannot pull like hash map as these are strings.
 print("Position # 2 holds: ", my_dict['email']) # in order to pull position 2 then need to know key name versus index.
@@ -15,12 +22,14 @@ print("Position # 4 holds: ", my_dict[4])
 
 my_dict[5] = "Cats are awesome!"
 print("Position # 5 holds: ", my_dict[5])
+print(f"-------------------------------------------\n")
 
-print("-------------------------------------------")
+del my_dict[4]
+# print(my_dict[4]) # prints KeyError becauase [4] is deleted
 print(my_dict)
-print("-------------------------------------------")
+print(f"-------------------------------------------\n")
 
-
+del my_dict
 
 
 """
@@ -35,14 +44,16 @@ my_hash_map = {}
 my_hash_map[2] = 91
 my_hash_map[3] = "Hello World"
 my_hash_map[4]= 55
-print("-------------------------------------------")
+print(f"Content of Hash Map: {my_hash_map[2]}, {my_hash_map[3]}, {my_hash_map[4]}")
+print(f"-------------------------------------------\n")
 
-print(my_hash_map[2], my_hash_map[3], my_hash_map[4])
 print(4 in my_hash_map) # prints True
 print(854 in my_hash_map) # prints Fasle because it doesn't exist.
 print(my_hash_map)
-print("-------------------------------------------")
+print(f"-------------------------------------------\n")
 
 
 for key, val in my_hash_map.items():
     print(f"These are the paired key:value ->  {key} : {val}")
+
+print(f"-------------------------------------------\n")
