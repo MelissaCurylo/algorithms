@@ -90,8 +90,6 @@ Pseudocode/Solution:
         - enumerate() converts data object and returns and object via adding iterating counter value to object. 
         - removes the need to instantiate i = 0.
         - enumerate starts at zero by default.
-    
-
 
 
     Hash Map View nums1
