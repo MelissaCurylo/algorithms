@@ -41,7 +41,7 @@ nums3 = [3,3]
 target3 = 6
 
 
-# Brute Force Solutions
+# Brute Force Solution 1
     # Time Complexity: O(n^2)
         # nested for loops
 
@@ -54,3 +54,17 @@ def bruteForce(nums, target):
                 return [numOne, numTwo]
 
 print(bruteForce(nums1, target1))
+
+
+
+# Brute Force Solution 2
+    # Time Complexity: O(n^2)
+        # nested for loops
+
+def bruteForce2(nums, target):
+    for numOne in range(len(nums)):
+        for numTwo in range(numOne + 1, len(nums)):
+            if numTwo == target - numOne:
+                return [numOne, numTwo]
+
+print(bruteForce2(nums1,target1))
